@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Testing</name>
+    </assembly>
+    <members>
+        <member name="T:Testing.Testing">
+            <summary>
+            ENGI3675 Test cases for the requirements of Assignment 4
+            </summary>
+        </member>
+        <member name="M:Testing.Testing.injectionAttack">
+            <summary>
+            SQL injection attempted on the safe (prepared statements) and unsafe insertion pages
+            Security is ensured by testing for the script not being run
+            Injection is then confirmed by ensuring all students have a gpa of 4.0
+            Additionally: test confirms that the new entry used to piggy back off of is removed
+            </summary>
+        </member>
+        <member name="M:Testing.Testing.XSSAttack">
+            <summary>
+            XSS Attack Test case:
+            Injection of javascript that changes the background image
+            The results from the database are tested to ensure the script is escaped
+            </summary>
+        </member>
+    </members>
+</doc>

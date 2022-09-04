@@ -1,0 +1,222 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Assign_4</name>
+    </assembly>
+    <members>
+        <member name="T:Assign_4.App_Code.ServerConn.ServerConn">
+            <summary>
+            Class for server connection methods
+            </summary>
+        </member>
+        <member name="M:Assign_4.App_Code.ServerConn.ServerConn.MyQuery(System.String)">
+            <summary>
+            Function to execute incoming SQL queries
+            </summary>
+            <param name="sql">Takes an SQL query as a parameter to execute on the database</param>
+            <returns>Returns data read from executed query</returns>
+        </member>
+        <member name="M:Assign_4.App_Code.ServerConn.ServerConn.UnsafeAdd(System.String,System.Single)">
+            <summary>
+            Function which uses string concatenation to insert data into database
+            </summary>
+            <param name="name">Takes the student name as a parameter to insert into database</param>
+            <param name="gpa">Takes the student GPA as a parameter to insert into database</param>
+        </member>
+        <member name="M:Assign_4.App_Code.ServerConn.ServerConn.SafeAdd(System.String,System.Single)">
+            <summary>
+            Function utilizing a prepared query to insert data into database
+            </summary>
+            <param name="name">Takes the student name as a parameter to insert into database</param>
+            <param name="gpa">Takes the student GPA as a parameter to insert into database</param>
+        </member>
+        <member name="T:Assign_4.SafeInsert">
+            <summary>
+            SafeInsert class responsible for displaying a webpage with the ability to insert into database
+            </summary>
+        </member>
+        <member name="M:Assign_4.SafeInsert.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Page_Load constructor
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="M:Assign_4.SafeInsert.InsertStudent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Contains the code to insert a students and their GPA into the database
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="F:Assign_4.SafeInsert.safeinsert">
+            <summary>
+            safeinsert control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.SafeInsert.tblSafeAdd">
+            <summary>
+            tblSafeAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.SafeInsert.sname">
+            <summary>
+            sname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.SafeInsert.sgpa">
+            <summary>
+            sgpa control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.SafeInsert.InsertStudent">
+            <summary>
+            InsertStudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Assign_4.SafeShowAll">
+            <summary>
+            SafeShowAll class responsible for displaying the webpage containing the full database table
+            </summary>
+        </member>
+        <member name="M:Assign_4.SafeShowAll.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Contains the code to execute SELECT * query and display full table
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="F:Assign_4.SafeShowAll.safeshowall">
+            <summary>
+            safeshowall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.SafeShowAll.tblsafeselect">
+            <summary>
+            tblsafeselect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Assign_4.UnsafeInsert">
+            <summary>
+            UnsafeInsert class responsible for displaying a webpage with the ability to insert into database
+            </summary>
+        </member>
+        <member name="M:Assign_4.UnsafeInsert.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Page_Load constructor
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="M:Assign_4.UnsafeInsert.InsertStudent_Click(System.Object,System.EventArgs)">
+            <summary>
+            Contains the code to insert a students and their GPA into the database
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="F:Assign_4.UnsafeInsert.unsafeinsert">
+            <summary>
+            unsafeinsert control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.UnsafeInsert.tblUnsafeAdd">
+            <summary>
+            tblUnsafeAdd control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.UnsafeInsert.sname">
+            <summary>
+            sname control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.UnsafeInsert.sgpa">
+            <summary>
+            sgpa control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.UnsafeInsert.InsertStudent">
+            <summary>
+            InsertStudent control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="T:Assign_4.UnsafeShowAll">
+            <summary>
+            UnsafeShowAll class responsible for displaying the webpage containing the full database table
+            </summary>
+        </member>
+        <member name="M:Assign_4.UnsafeShowAll.Page_Load(System.Object,System.EventArgs)">
+            <summary>
+            Contains the code to execute SELECT * query and display full table
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The instance containing the event data.</param>
+        </member>
+        <member name="F:Assign_4.UnsafeShowAll.unsafeshowall">
+            <summary>
+            unsafeshowall control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+        <member name="F:Assign_4.UnsafeShowAll.tblunsafeselect">
+            <summary>
+            tblunsafeselect control.
+            </summary>
+            <remarks>
+            Auto-generated field.
+            To modify move field declaration from designer file to code-behind file.
+            </remarks>
+        </member>
+    </members>
+</doc>

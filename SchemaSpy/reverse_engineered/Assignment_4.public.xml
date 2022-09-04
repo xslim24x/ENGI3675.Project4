@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<database name="Assignment_4" schema="public" type="PostgreSQL - 9.4.0">
+   <tables>
+      <table name="students" numRows="8" remarks="A database of students." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('students_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="Student IDs of all students within database." size="10" type="serial"/>
+         <column autoUpdated="false" digits="0" id="1" name="name" nullable="false" remarks="Names of all students within database." size="2147483647" type="text"/>
+         <column autoUpdated="false" digits="8" id="2" name="gpa" nullable="false" remarks="GPA of all students within database" size="8" type="float4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="students_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+      </table>
+   </tables>
+</database>
